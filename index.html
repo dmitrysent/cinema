@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
     <title>Cinema</title>
 </head>
 <body>
-    <h1>Hello, Cinema</h1>
-    <h2>hello</h2>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">Methed
+                <span class="header__logo-primary"> cinema</span>
+            </a>
+
+            <form class="header__search-form" action="#">
+                <input class="header__search-input" required placeholder="Поиск" type="search">
+            </form>
+
+            <button class="header__burgerg-btn">
+                <svg class="header__burgerg-svg" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.94403 10.8959H35.6564" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M29.0537 20.8H5.94403" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.94403 30.7041H22.4509" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+                
+        
+        </div>
+    </header>
+
+    <main>
+        <section class="film-week">
+            <div class="container film-week__container">
+                <img class="film-week__poster" src="img/film-week_bg.jpg" alt="постер фильма Дюна">
+                <h2 class='film-week__title'>Дюна</h2>
+                <p class="film-week__tagline">За пределами страха ждёт судьба</p>
+                <button class="film-week_watch-btn">Смотреть фильм</button>
+                <a class="film-week__watch-trailer" href="#"  aria-label="смотреть трейлер">
+                    
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
 
     <script src="script.js"></script>
 </body>
