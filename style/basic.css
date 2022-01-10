@@ -27,8 +27,19 @@ ul {
     padding: 0;
 }
 
-h1, h2, p {
+h1, h2, p, ul {
     margin: 0;
+}
+
+a {
+    display: block;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a:hover {
+    color: var(--color-primary);
 }
 
 .container {
