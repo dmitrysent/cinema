@@ -22,6 +22,11 @@ img {
     height: auto;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 h1, h2, p {
     margin: 0;
 }
@@ -35,4 +40,10 @@ h1, h2, p {
 button {
     cursor: pointer;
 
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
 }
