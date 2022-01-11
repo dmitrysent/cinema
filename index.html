@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <link rel="stylesheet" href="style/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+
     <title>Cinema</title>
 </head>
 <body>
@@ -21,17 +26,17 @@
                 <input class="header__search-input" required placeholder="Поиск" type="search">
             </form>
 
-            <button class="header__burgerg-btn">
+            <button class="header__burgerg-btn js-burger-btn">
                 <svg class="header__burgerg-svg" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.94403 10.8959H35.6564" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M29.0537 20.8H5.94403" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M5.94403 30.7041H22.4509" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
-                
-        
         </div>
     </header>
+
+    
 
     <main>
         <section class="film-week">
@@ -39,8 +44,8 @@
                 <img class="film-week__poster" src="img/film-week_bg.jpg" alt="постер фильма Дюна">
                 <h2 class='film-week__title'>Дюна</h2>
                 <p class="film-week__tagline">За пределами страха ждёт судьба</p>
-                <button class="film-week_watch-btn">Смотреть фильм</button>
-                <a class="film-week__watch-trailer" href="#"  aria-label="смотреть трейлер">
+                <button class="film-week__watch-btn">Смотреть фильм</button>
+                <a class="film-week__watch-trailer" href="https://youtu.be/Q6nepw3fskg"  aria-label="смотреть трейлер" data-fancybox >
                 </a>    
             </div>
         </section>
@@ -55,50 +60,52 @@
 
                 <ul class="other-films__list">
                     <li class="other-films__item">
-                        <a href="" class="other-films__link">
+                        <a href="https://youtu.be/whv6KtrXIc0" class="other-films__link" data-fancybox>
                             <img src="img/shang_chi.jpg" alt="Постер к фильму Шан-Чи" class="other-films__img">
                         </a>
                     </li>
 
                     <li class="other-films__item">
-                        <a href="" class="other-films__link">
+                        <a href="https://youtu.be/9FpufEP1jeI" class="other-films__link" data-fancybox>
                             <img src="img/free_guy.jpg" alt="Постер к фильму Главный герой" class="other-films__img">
                         </a>
                     </li>
                     
                     <li class="other-films__item">
-                        <a href="" class="other-films__link">
+                        <a href="https://youtu.be/zeKFmhPKgDs" class="other-films__link" data-fancybox>
                             <img src="img/addams_family.jpg" alt="Постер к фильму Семейка Адамс" class="other-films__img">
                         </a>
                     </li>
                     
                     <li class="other-films__item">
-                        <a href="" class="other-films__link">
+                        <a href="https://youtu.be/Z3b1GbPg2VM" class="other-films__link" data-fancybox>
                             <img src="img/no_timeto_die.jpg" alt="Постер к фильму Не время умирать" class="other-films__img">
                         </a>
                     </li>
                     
                     <li class="other-films__item">
-                        <a href="" class="other-films__link">
+                        <a href="https://youtu.be/8qB8EGNOtr8" class="other-films__link" data-fancybox>
                             <img src="img/matrix.jpg" alt="Постер к фильму Матрица" class="other-films__img">
                         </a>
                     </li>
                     
                     <li class="other-films__item">
-                        <a href="" class="other-films__link">
+                        <a href="https://youtu.be/hlANal2_tsc" class="other-films__link" data-fancybox>
                             <img src="img/spiderman.jpg" alt="Постер к фильму Человек Паук" class="other-films__img">
                         </a>
                     </li>
                     
                     <li class="other-films__item">
-                        <a href="" class="other-films__link">
-                            <img src="img/infinite.jpg" alt="Постер к фильму" class="other-films__img">
+                        <a href="https://youtu.be/cnn8xghmxZA" class="other-films__link" data-fancybox>
+                            <img src="img/infinite.jpg" alt="Постер к фильму Бесконечность" class="other-films__img">
                         </a>
                     </li>
                     
+                    
+
                     <li class="other-films__item">
-                        <a href="" class="other-films__link">
-                            <img src="img/eternals.jpg" alt="Постер к фильму" class="other-films__img">
+                        <a href="https://youtu.be/_oboseJViww" class="other-films__link" data-fancybox>
+                            <img src="img/eternals.jpg" alt="Постер к фильму Вечные" class="other-films__img">
                         </a>
                     </li>                
                 </ul>
@@ -156,6 +163,36 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+
+
+    <nav class="navigation js-navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="" class="navigation__link">В тренде</a>
+            </li>
+            <li class="navigation__item">
+                <a href="" class="navigation__link">Популярные фильмы</a>
+            </li>
+            <li class="navigation__item">
+                <a href="" class="navigation__link">Популярные сериалы</a>
+            </li>
+            <li class="navigation__item">
+                <a href="" class="navigation__link">Топ Фильмов</a>
+            </li>
+            <li class="navigation__item">
+                <a href="" class="navigation__link">Топ Сериалов</a>
+            </li>
+        </ul>
+        <button class="navigation__close js-navigation-close">
+            <svg class="navigation__close-cross" height="30" viewBox="0 0 365.696 365.696" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <script src="js/script.js"></script>
+    <script type="module">
+        import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.esm.js";
+    </script>
 </body>
 </html>

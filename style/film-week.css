@@ -33,7 +33,7 @@
     padding-top: 15px;
 }
 
-.film-week_watch-btn {
+.film-week__watch-btn {
     width: 375px;
     height: 72px;
     font-size: 18px;
@@ -45,7 +45,7 @@
     transition: all .3s;
 }
 
-.film-week_watch-btn:hover {
+.film-week__watch-btn:hover {
     background-color: var(--color-primary);
 }
 
